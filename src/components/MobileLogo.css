@@ -1,0 +1,23 @@
+.marquee-container {
+  width: 100%; /* Adjust according to your container width */
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 20s linear infinite; /* Adjust duration as needed */
+}
+
+.marquee:hover {
+  animation-play-state: paused; /* Pause the animation on hover */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust distance to move */
+  }
+}
+
