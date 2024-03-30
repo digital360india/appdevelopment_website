@@ -20,12 +20,12 @@ export default function NewAnimation() {
     {
       src: "avater2.jpeg",
       title: "ANDORIDS",
-      text: "qmwm[wcqmqlcmoqwosppsq]sl][,qx';,xp[xqkd[kqpwdkqxlxw]q]l]qwl[qdwlqwx[lqw[",
+      text: "the usb uis qo u9jq wsu jqwwi xq u9 qqs",
     },
     {
       src: "avater3.jpeg",
       title: "DESKTOP APPS",
-      text: "qwertyuiop[asdfghjklzxcvbnm,",
+      text: "qgdgqiwu hwhqox ihxq q qxwhiqxhoixqwx qxhwoi",
     },
   ];
 
