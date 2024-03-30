@@ -52,7 +52,7 @@ const Clints = () => {
         </p>
       </div>
       <div>
-        <p className="font-normal text-[16px] md:text-[24px] w-[332px] md:w-[60%] flex flex-wrap pb-8 ">
+        <p className="font-normal text-[16px] md:text-[24px] w-[100%] md:w-[60%] flex flex-wrap pb-8 ">
           Lorem ipsum dolor sit amet consectetur. Amet dolor nisi aliquam
           tincidunt mauris in. Pretium nulla sapien facilisis tempor. Nisl id
           vitae amet vitae turpis semper consequat semper.
