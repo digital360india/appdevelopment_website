@@ -161,7 +161,7 @@ export default function NewAnimation() {
               <p className="text-5xl text-[#13375D] font-semibold mb-5">IOS</p>
               <div className="h-[284px] w-full">
                 <img
-                  className="h-[200px] rounded-lg shadow-lg mb-5 w-full bg-slate-400 object-contain"
+                  className="h-[200px] rounded-lg shadow-lg mb-5 w-full object-contain"
                   src={object[0].src}
                   alt=""
                 />
