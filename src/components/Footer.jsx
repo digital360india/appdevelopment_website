@@ -61,9 +61,9 @@ export default function Footer() {
           <div className="flex justify-between text-[14px] md:text-[16px] md:w-[340px] lg:text-[16px] lg:w-[380px] py-4 ">
             <div className="space-y-5">
               <p>SITE MAP</p>
-              <p>Home</p>
-              <p>About Us</p>
-              <p>Contact</p>
+              <p> <Link to={"/"}>Home</Link></p>
+              <p><Link to={"/about"}>About Us</Link></p>
+              <p><Link to={"/Contact"}>Contact</Link></p>
             </div>
             <div className="space-y-5">
               <p>FOLLOW US</p>

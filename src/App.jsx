@@ -1,29 +1,24 @@
-import React from 'react'
-import './App.css'
-
-import Card from "./components/card.jsx";
-import Clints from "./components/Clints.jsx";
-import NewAnimation from "./components/NewAnimation";
-import SomeThing from "./components/SomeThing";
-
-
-import Contact from './components/pages/Contact'
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter as  Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
+import Footer from "./components/Footer";
 
 function App() {
-
   return (
     <>
-   <Contact/>
-
-      <SomeThing/>
-      <div>
-        <Card />
-        <Clints/>
-         <NewAnimation/>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/about" element={<AboutUs/>} />
+        </Routes>
+        <Footer/>
+      </Router>
     </>
-    );
+  );
 }
 
 export default App;
