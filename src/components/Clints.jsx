@@ -61,7 +61,7 @@ const Clints = () => {
 
       <div className="hidden md:grid grid-cols-6 gap-y-8 ">
       {Logo.map((value) => (
-        <div className="border border-[#969696] w-[11.6vw] h-[18.2vh] flex justify-center items-center">
+        <div className=" w-[11.6vw] h-[18.2vh] flex justify-center items-center">
           <img  className="h-[55px] w-[70px]" src={value.img} alt="" />
         </div>       
         ))}

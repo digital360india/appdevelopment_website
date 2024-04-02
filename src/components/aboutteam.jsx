@@ -33,7 +33,8 @@ export default function Aboutteam() {
           </div>
           <div className="flex flex-col justify-center space-y-4 items-center">
           <img
-            className="xl:w-[267px] md:w-[267px]  h-[320px] xl:h-[420px]"
+            className="xl:w-[267px] md:w-[267px] shadow-lg shadow-slate-600 shadow-blur-md xl:h-[420px]"
+
             src="baggrd.png"
             alt=""
           />
@@ -63,7 +64,7 @@ export default function Aboutteam() {
           </div>
           <div className="flex flex-col justify-center space-y-4 items-center">
           <img
-            className="xl:w-[267px] md:w-[267px]  h-[320px] xl:h-[420px]"
+            className="xl:w-[267px] md:w-[267px]  shadow-lg shadow-slate-600 shadow-blur-md  h-[320px] xl:h-[420px]"
             src="baggrd.png"
             alt=""
           />
