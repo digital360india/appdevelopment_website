@@ -9,6 +9,7 @@ export default function SomeThing() {
  let diff=0;
  let changeIn=0;
  let translateValue=0;
+ 
 
 if(viewPort>=768)
 {
@@ -20,7 +21,7 @@ translateValue=((0.42)*viewPort)-changeIn;
   const array = [
     {
       title: "the ndpqwow",
-      description: ",e2o,wq[,p[q,wp,qw",
+      description: ",e2o,wq[,p[q,wp,qw jioijoioj iijijo iiojijo ji",
       src: "avater1.jpeg",
     },
 
@@ -65,11 +66,11 @@ translateValue=((0.42)*viewPort)-changeIn;
 
   return (
     <>
-      <div className="w-full h-screen md:p-10 p-2 bg-slate-200">
+      <div className="w-full h-screen md:p-10 p-2 font-poppins bg-slate-200">
         <div className=" w-full h-full text-center md:p-4 p-1  ">
           <div className="flex flex-col gap-5 w-full h-[20%]">
-            <p className="text-black text-lg md:text-xl">TESTIMONIALS</p>
-            <p className="text-slate-600  font-semibold md:font-bold text-4xl md:text-6xl">
+            <p className="text-black  text-sm  xl:text-lg font-normal ">TESTIMONIALS</p>
+            <p className="text-slate-600  font-semibold md:font-bold text-3xl md:text-4xl  xl:text-6xl">
               
               Loremx
             </p>
@@ -83,7 +84,7 @@ translateValue=((0.42)*viewPort)-changeIn;
                 className=" text-slate-800 font-semibold  h-[20%] "
               >
                 <svg
-                 className="w-[30px] h-[30px] md:h-[70px] md:w-[70px]"
+                 className=" sm:w-[20%] sm:h-[20%]   md:w-[30px] md:h-[30px]  lg:h-[40px] lg:w-[40px] xl:h-[60px] xl:w-[60px]"
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
                   height="1em"
@@ -95,23 +96,23 @@ translateValue=((0.42)*viewPort)-changeIn;
                   />
                 </svg>
               </button>
-              <div className="md:w-[50%] w-[90%] h-[90%] ">
-                <div className=" bg-white border-slate-400 border-[4px] rounded-2xl w-[100%] h-[90%] flex flex-col justify-center gap-5 ">
+              <div className="md:w-[40%] w-[90%] h-[90%] ">
+                <div className=" bg-white border-[#13375D] border-[1px] rounded-2xl w-[100%] h-[90%] flex flex-col justify-center gap-5 overflow-hidden ">
                   <p
-                    className={`duration-300 text-slate-700 ease-in-out ${
+                    className={`duration-300 text-[#13375D] ease-in-out ${
                       animation
                         ? `opacity-100 translate-x-0`
                         : `opacity-0 translate-x-10`
-                    } md:text-4xl text-base font-medium  md:font-semibold`}
+                    }  md:text-[20px] lg:text-2xl xl:text-4xl text-[16px] font-medium  md:font-semibold p-2`}
                   >
                     {array[index].title}
                   </p>
                   <p
-                    className={`duration-300 text-slate-600 ease-in-out ${
+                    className={`duration-300 text-[#303030] ease-in-out ${
                       animation
                         ? `opacity-100 translate-x-0`
                         : `opacity-0 translate-x-10`
-                    } text-sm font-normal md:text-3xl`}
+                    } text-[12px] font-normal md:text-[14px] lg:text-[15px] xl:text-[20px] p-2`}
                   >
                     {array[index].description}
                   </p>
@@ -138,7 +139,7 @@ translateValue=((0.42)*viewPort)-changeIn;
                 className=" text-slate-800 font-semibold   h-[20%]"
               >
                 <svg
-                className="w-[30px] h-[30px] md:h-[70px] md:w-[70px]"
+                className="  sm:w-[20%] sm:h-[20%]   md:w-[30px] md:h-[30px]  lg:h-[40px] lg:w-[40px] xl:h-[60px] xl:w-[60px]"
                   xmlns="http://www.w3.org/2000/svg"
                   width="1em"
                   height="1em"
@@ -160,17 +161,17 @@ translateValue=((0.42)*viewPort)-changeIn;
             
           </div>
           
-          <div style={{transform:`translateX(${translateValue - index*155}px)`}}
-                className="duration-300 hidden md:flex gap-14   items-center justify-center overflow-hidden h-[90%] w-[484px]"
+          <div style={{transform:`translateX(${(viewPort<=1024 && viewPort>425? (translateValue - 40):(translateValue) ) - (viewPort<=1024 && viewPort>425?index*115: index*155 ) }px)`}}
+                className="duration-300 hidden md:flex gap-14   items-center justify-center overflow-hidden h-[100%] w-[484px]"
               >
                 {array.map((items, i) => {
                   return (
                     <img
                       key={i}
                       src={items.src}
-                      className={`duration-500 h-[100px] ${
+                      className={`duration-500  h-[60px] xl:h-[100px] ${
                         i === index ? `scale-100  ` : `scale-50`
-                      } w-[100px] rounded-[50%]`}
+                      }  w-[60px] xl:w-[100px] rounded-[50%]`}
                     ></img>
                   );
                 })}
