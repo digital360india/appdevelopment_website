@@ -46,9 +46,9 @@ export default function NewAnimation() {
  
   return (
     <>
-      <div className="w-full h-full md:h-screen bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-slate-300 via-white to-slate-300 p-8  md:p-15 lg:p-20">
+      <div className="w-full h-full font-poppins md:h-screen bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-slate-300 via-white to-slate-300 p-8  md:p-15 lg:p-20">
         <div className=" h-full w-full md:py-3">
-          <div className="   text-4xl lg:text-6xl  text-slate-700 md:h-[20%] mb-5   font-bold">
+          <div className="   text-3xl lg:text-6xl  text-[#13375D] md:h-[20%] mb-5   font-semibold">
             Cross Platform
           </div>
           <div className=" hidden md:flex gap-32 h-[80%] ">
@@ -73,17 +73,17 @@ export default function NewAnimation() {
                   ></div>
                 </div>
                 <div className="h-[45%] ">
-                  <p className="text-slate-600 h-[25%] py-1 text-2xl font-bold ">
+                  <p className="text-[#13375D] h-[25%] py-1 md:text-xl lg:text-xl xl:text-2xl font-semibold ">
                     {object[0].title}
                   </p>
-                  <p className=" text-slate-700 ">{object[0].text}</p>
+                  <p className=" text-[#111111] text-xs lg:mt-2 lg:text-xm xl:text-base ">{object[0].text}</p>
                 </div>
               </div>
               <div
                 className={` duration-700 relative ease-in-out  ${
                   some.some2
-                    ? `scale-110 top-[-500px] z-50 opacity-100 `
-                    : `scale-90 top-[-200px] opacity-0  z-0 `
+                    ? `scale-110 top-[-400px] lg:top-[-330px] xl:top-[-450px] z-50 opacity-100 `
+                    : `scale-90 top-[-170px] opacity-0  z-0 `
                 }   h-[70%] w-[90%]`}
               >
                 <div className=" p-2 h-[55%] w-full">
@@ -97,17 +97,17 @@ export default function NewAnimation() {
                   ></div>
                 </div>
                 <div className="h-[45%]">
-                  <p className="text-slate-600 h-[25%] py-1 text-2xl font-bold ">
+                  <p className="text-[#13375D] h-[25%] py-1 text-xl lg:text-xl xl:text-2xl font-semibold ">
                     {object[1].title}
                   </p>
-                  <p className="text-slate-700">{object[1].text}</p>
+                  <p className="text-[#111111] text-xs lg:mt-2 lg:text-xm xl:text-base ">{object[1].text}</p>
                 </div>
               </div>
               <div
                 className={` duration-500 relative ease-in-out  ${
                   some.some3
-                    ? `scale-110 top-[-750px] z-50 opacity-100 `
-                    : `scale-90 top-[-550px] opacity-0 z-0 `
+                    ? `scale-110 top-[-580px] lg:top-[-525px] xl:top-[-740px] z-50 opacity-100 `
+                    : `scale-90 top-[-400px] opacity-0 z-0 `
                 }  h-[70%] w-[90%]`}
               >
                 <div className=" p-2 h-[55%] w-full">
@@ -121,10 +121,10 @@ export default function NewAnimation() {
                   ></div>
                 </div>
                 <div className="h-[45%]">
-                  <p className="text-slate-600 h-[25%] py-1 text-2xl font-bold ">
+                  <p className="text-[#13375D] h-[25%] py-1 text-base lg:text-xl xl:text-2xl font-semibold ">
                     {object[2].title}
                   </p>
-                  <p className="text-slate-700 ">{object[2].text}</p>
+                  <p className="text-[#111111] lg:mt-2 text-xs lg:text-xm xl:text-base ">{object[2].text}</p>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function NewAnimation() {
                 onMouseEnter={() => {
                   handleEnter1();
                 }}
-                className="duration-300  h-[25%] text-slate-300 hover:text-slate-900 text-base md:text-8xl inline  font-bold"
+                className={`duration-300  h-[25%]  ${current===0?`text-[#13375D]`:`text-slate-300`} text-base  md:text-5xl lg:text-5xl xl:text-8xl inline  font-bold`}
               >
                 IOS
               </motion.span>
@@ -141,7 +141,7 @@ export default function NewAnimation() {
                 onMouseEnter={() => {
                   handleEnter2();
                 }}
-                className="duration-300  h-[25%] text-slate-300 hover:text-slate-900 text-base md:text-8xl inline  font-bold "
+                className={`duration-300  h-[25%]  ${current===1?`text-[#13375D]`:`text-slate-300`} text-base md:text-5xl lg:text-5xl xl:text-8xl inline  font-bold `}
               >
                 ANDORID
               </motion.span>
@@ -149,7 +149,7 @@ export default function NewAnimation() {
                 onMouseEnter={() => {
                   handleEnter3();
                 }}
-                className="duration-300  h-[25%]  text-slate-300 hover:text-slate-900 text-base md:text-8xl inline  font-bold"
+                className={`duration-300  h-[25%]   ${current===2?`text-[#13375D]`:`text-slate-300`} text-base md:text-5xl lg:text-5xl xl:text-8xl inline  font-bold`}
               >
                 DESKTOP APPS
               </motion.span>
@@ -158,7 +158,7 @@ export default function NewAnimation() {
 
           <div className="flex flex-col w-full h-[90%]  md:hidden">
             <div className="h-[364px]  w-full">
-              <p className="text-5xl text-[#13375D] font-semibold mb-5">IOS</p>
+              <p className="text-4xl  lg:text-5xl text-[#13375D] font-semibold mb-5">IOS</p>
               <div className="h-[284px] w-full">
                 <img
                   className="h-[200px] rounded-lg shadow-lg mb-5 w-full object-contain"
@@ -172,7 +172,7 @@ export default function NewAnimation() {
               </div>
             </div>
             <div className="h-[364px] mt-5  w-full">
-              <p className="text-5xl text-[#13375D] font-semibold mb-5">Android</p>
+              <p className="text-4xl lg:text-5xl text-[#13375D] font-semibold mb-5">Android</p>
               <div className="h-[284px] w-full">
                 <img
                   className="h-[200px] rounded-lg shadow-lg w-full mb-5 object-contain"
@@ -186,7 +186,7 @@ export default function NewAnimation() {
               </div>
             </div>
             <div className="h-[364px] mt-5 w-full">
-              <p className="text-5xl text-[#13375D]  font-semibold mb-5">Desktop Apps</p>
+              <p className=" text-4xl lg:text-5xl text-[#13375D]  font-semibold mb-5">Desktop Apps</p>
               <div className="h-[284px] w-full">
                 <img
                   className="h-[200px] rounded-lg shadow-lg w-full mb-5 object-contain"
