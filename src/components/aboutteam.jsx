@@ -34,6 +34,7 @@ export default function Aboutteam() {
           <div className="flex flex-col justify-center space-y-4 items-center">
           <img
             className="xl:w-[267px] md:w-[267px] shadow-lg shadow-slate-600 shadow-blur-md xl:h-[420px]"
+
             src="baggrd.png"
             alt=""
           />
