@@ -39,7 +39,7 @@ const Card = () => {
     </div>
       <div className="hidden  lg:flex flex-wrap card space-x-2 justify-around  ">
         {language.map((value, index) => (
-          <div key={index} className="flip-card relative content ">
+          <div key={index} className="flip-card relative">
             <div className="flip-card-inner  relative rounded-2xl ">
               <div
                 className="flip-card-front front absolute rounded-2xl overflow-hidden "

@@ -7,32 +7,39 @@ function Hero() {
   return (
     <div className="all">
       <div className="main">
-        <header>
-          {/* <li onClick={showSidebar}>
-            <a href="#">
-              <img src="menu-02.png" alt="" />
-            </a>
-          </li> */}
-          <img className="logo" src="logo.png" alt="" />
-          <nav className="mid">
-            <ul className="links">
-              <li className="hideOnMobile">
+        <header className="lg:flex justify-around items-center py-4 px-6">
+            <div className="flex ">
+            <div className="mr-4 bg-white lg:order-1">
+              <button className="lg:hidden">
+                <img src="menu-02.png" alt="Menu" />
+              </button>
+            </div>
+            <div className="sm:order-2">
+              <img className="logo" src="logo.png" alt="Logo" />
+            </div></div>
+            <div className="order-2">
+          <nav className="hidden md:block ">
+            <ul className="mid">
+              <li>
                 <a href="#">Cross Platform</a>
               </li>
-              <li className="hideOnMobile">
+              <li>
                 <a href="#">Tech Stack</a>
               </li>
-              <li className="hideOnMobile">
+              <li>
                 <a href="#">Clients</a>
               </li>
-              <li className="hideOnMobile">
+              <li>
                 <a href="#">Our Approach</a>
               </li>
             </ul>
           </nav>
-          <a href="#">
-            <button className="hideSidebar">Enquire Now</button>
-          </a>
+          </div>
+          <div className="hidden lg:block order-3">
+            <a href="#">
+              <button className="hideSidebar">Enquire Now</button>
+            </a>
+          </div>
         </header>
         <div className="content">
           <div className="tags">

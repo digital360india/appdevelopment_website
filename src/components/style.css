@@ -28,13 +28,12 @@
 }
 header {
     gap: 22px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
 li a {
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     justify-content: space-around;
     height: 24px;
@@ -116,7 +115,6 @@ header li img {
         width: 120px;
     }
     button {
-        font-size: 12px;
         width: 126.67px;
         height: 24px;
         display: flex;
@@ -143,7 +141,7 @@ header li img {
         align-items: center;
     }
     .mid {
-        height: 31px;
+        display: none;
     }
     .logo {
         width: 100px;
@@ -168,11 +166,7 @@ header li img {
      height: 300px;
      Top: 100px;
     }
-    header {
-        width: 430px;
-        height: 60px;
-        backdrop-filter: blur(15px);
-    }
+
     header li img {
         margin-bottom: 22px;
         width: 24px;
