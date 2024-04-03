@@ -54,7 +54,7 @@ li a {
 .links li a:hover {
     color: #0088A9;
 }
-button {
+.btn {
     width: 137px;
     border: 1px solid rgba(255, 255, 255, 1);
     padding: 6px 20px;
@@ -114,7 +114,7 @@ header li img {
     .logo {
         width: 120px;
     }
-    button {
+    .btn {
         width: 126.67px;
         height: 24px;
         display: flex;
@@ -146,7 +146,7 @@ header li img {
     .logo {
         width: 100px;
     }
-    button {
+    .btn {
         width: 115.67px;
         height: 22px;
         padding: 12px;
@@ -178,7 +178,7 @@ header li img {
     .mid {
         display: none;
     }
-    button {
+    .btn {
         display: none;
     }
     .links img {

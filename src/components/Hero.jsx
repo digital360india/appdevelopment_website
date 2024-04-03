@@ -1,9 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import "./style.css"; // Import your CSS file
+import CustomPopup from "./Popup";
+
 function Hero() {
-  const showSidebar = () => {
+
+
+  const [isOpen, setOpen] = useState(false);
+
     // Define your function here if needed
-  };
+
   return (
     <div className="all">
       <div className="main">
@@ -35,11 +41,15 @@ function Hero() {
             </ul>
           </nav>
           </div>
-          <div className="hidden lg:block order-3">
-            <a href="#">
-              <button className="hideSidebar">Enquire Now</button>
-            </a>
-          </div>
+          <div className=" flex items-center justify-center bg-gray-200">
+      <button
+        onClick={() => setOpen(true)}
+        className="bg-blue-500 text-white btn hover:bg-blue-600"
+      >
+        Submit
+      </button>
+      <CustomPopup isOpen={isOpen} setOpen={setOpen} />
+    </div>    
         </header>
         <div className="content">
           <div className="tags">
