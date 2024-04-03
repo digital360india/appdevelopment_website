@@ -44,7 +44,7 @@ const Clints = () => {
     },
   ];
   return (
-    <div className="p-4 md:p-20 ">
+    <div className="px-4 py-20 md:p-20 ">
       <div>
         <p className="text-[#13375D] text-[32px] md:text-[60px] font-semibold mb-2">
           CLIENTS WE HAVE <br />
@@ -62,7 +62,7 @@ const Clints = () => {
       <div className="hidden md:grid grid-cols-6 gap-y-8 ">
       {Logo.map((value) => (
         <div className=" w-[11.6vw] h-[18.2vh] flex justify-center items-center">
-          <img  className="h-[55px] w-[70px]" src={value.img} alt="" />
+          <img  className="h-[18vh] w-[11vw]" src={value.img} alt="" />
         </div>       
         ))}
       </div>

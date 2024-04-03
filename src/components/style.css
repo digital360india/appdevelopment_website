@@ -28,13 +28,12 @@
 }
 header {
     gap: 22px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
 li a {
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     justify-content: space-around;
     height: 24px;
@@ -55,7 +54,7 @@ li a {
 .links li a:hover {
     color: #0088A9;
 }
-button {
+.btn {
     width: 137px;
     border: 1px solid rgba(255, 255, 255, 1);
     padding: 6px 20px;
@@ -115,8 +114,7 @@ header li img {
     .logo {
         width: 120px;
     }
-    button {
-        font-size: 12px;
+    .btn {
         width: 126.67px;
         height: 24px;
         display: flex;
@@ -143,12 +141,12 @@ header li img {
         align-items: center;
     }
     .mid {
-        height: 31px;
+        display: none;
     }
     .logo {
         width: 100px;
     }
-    button {
+    .btn {
         width: 115.67px;
         height: 22px;
         padding: 12px;
@@ -168,11 +166,7 @@ header li img {
      height: 300px;
      Top: 100px;
     }
-    header {
-        width: 430px;
-        height: 60px;
-        backdrop-filter: blur(15px);
-    }
+
     header li img {
         margin-bottom: 22px;
         width: 24px;
@@ -184,7 +178,7 @@ header li img {
     .mid {
         display: none;
     }
-    button {
+    .btn {
         display: none;
     }
     .links img {
