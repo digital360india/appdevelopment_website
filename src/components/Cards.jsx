@@ -41,13 +41,13 @@ const Cards = () => {
     return (
         <>
         <div className="flex flex-col md:flex-row md:justify-center items-center md:items-start gap-4 ">
-            <Marquee pauseOnHover speed={60}>
+            <Marquee pauseOnHover speed={51}>
                 <div className="flex md:w-full flex-row mb-4">
                     {industries.map((industry, index) => (
                         <div key={index} className="md:w-1/3 flex flex-col items-center">
                             <div
                                 className="relative w-[120px] h-[100px] md:w-[250px] md:h-[200px] group  mx-1 md:mx-3 md:hover:w-[400px] md:hover:h-[200px]
-                                 transition-transform duration-700 transform md:hover:translate-x-4"
+                                 transition-transform transform duration-700  md:hover:translate-x-4"
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
@@ -58,7 +58,7 @@ const Cards = () => {
                                         alt={`${industry.title} Image`}
                                     />
                                     <div className="absolute inset-0 flex justify-center items-center transition duration-300 ease-in-out">
-                                        <h2 className="text-white  text-[16px] md:text-2xl">{industry.title}</h2>
+                                        <h2 className="text-white  text-[16px] md:text-2xl mt ">{industry.title}</h2>
                                     </div>
                                 </div>
 
@@ -76,7 +76,6 @@ const Cards = () => {
                     ))}
                 </div>
             </Marquee>
-         
         </div>
         <Line_2/>
         </>

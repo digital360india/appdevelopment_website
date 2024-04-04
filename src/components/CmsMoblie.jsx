@@ -6,8 +6,8 @@ const CmsMobile = () => {
 
             <div className='left-content order-2 md:order-none'>
                 <img
-                    src='/Rectangle 15.jpg'
-                    className='rounded-lg w-[342px] h-[200px]'
+                    src='/Rectangle 15.png'
+                    className='rounded-lg w-full h-[200px]'
                     alt='cms dashboard image'
                     style={{
                         boxShadow: '0 0 6px 1px rgba(0, 0, 0, 0.25)'
