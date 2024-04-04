@@ -61,7 +61,7 @@ const SimpleCarousel = () => {
                 src={value.imageSrc}
                 alt={"Slide " + (index + 1)}
               />
-              <div className="absolute top-4 w-full h-full">
+              <div className="absolute top-64  text-center w-full h-full">
                 <p className="text-white font-semibold text-[32px]">
                   {value.name}
                 </p>

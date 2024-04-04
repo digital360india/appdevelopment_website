@@ -1,14 +1,10 @@
 import React, { useEffect } from "react";
 import Popup from "reactjs-popup";
 import kwesforms from 'kwesforms';
-
 function CustomPopup({ isOpen, setOpen }) {
-
 useEffect(()=>{
   kwesforms;
 },[]);
-
-
   return (
     <Popup
     open={isOpen}
@@ -88,5 +84,10 @@ useEffect(()=>{
     </Popup>
   );
 }
-
 export default CustomPopup;
+
+
+
+
+
+
