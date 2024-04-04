@@ -4,7 +4,7 @@ import CmsMobile from './CmsMoblie';
 const Cms_solutions = () => {
     return (
         <div>
-            <div className='cms hidden md:flex flex-col md:gap-10 xl:gap-0 sm:flex-row sm:justify-around p-6'>
+            <div className='cms hidden md:flex flex-col md:gap-10 xl:gap-0 sm:flex-row sm:justify-around  px-6 py-20'>
 
                 <div className='left-content'>
                     <img
