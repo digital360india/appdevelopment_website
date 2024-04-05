@@ -44,7 +44,7 @@ const Clints = () => {
     },
   ];
   return (
-    <div className="px-4 py-20 md:p-20 ">
+    <div className="px-4 py-20 md:p-20 " id="clients">
       <div>
         <p className="text-[#13375D] text-[32px] md:text-[60px] font-semibold mb-2">
           CLIENTS WE HAVE <br />
