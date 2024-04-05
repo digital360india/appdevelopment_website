@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Popup from "reactjs-popup";
-import kwesforms from "kwesforms";
+// import kwesforms from "kwesforms";
+const kwesforms = require('kwesforms');
 function CustomPopup({ isOpen, setOpen }) {
   useEffect(() => {
     const interval = setInterval(() => {
