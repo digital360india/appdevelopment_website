@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CustomPopup from "./Popup";
 
-export default function Hero() {
+export default function AboutHero() {
   const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <div className="bg-[url('./hero.jpeg')]  bg-center md:bg-cover font-poppins pb-2 h-[60vh] md:h-[100vh] w-full text-white relative">
+      <div className="bg-[url('./abouthero.jpeg')]  bg-center md:bg-cover font-poppins pb-2 h-[60vh] md:h-[100vh] w-full text-white relative">
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
         <div className="hidden md:flex px-20 py-10 justify-between items-center relative">
           <Link to={"/"}>
             <img src="./navbarlogo.png" className="w-[180px] h-[40px]" />
           </Link>
-          <div className="bg-[#D9D9D9] bg-opacity-10 w-[562px] h-[56px] flex justify-evenly items-center rounded-[45px]">
+          <div className="bg-[#D9D9D9] bg-opacity-30 w-[562px] h-[56px] flex justify-evenly items-center rounded-[45px]">
             <Link to={"/"}>Home</Link>
             <Link to={"/about"}>About us</Link>
             <Link to={"/Contact"}>Contact us</Link>
@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="flex md:hidden p-4 gap-20 bg-[#D9D9D9] bg-opacity-10 relative ">
           <button
             onClick={() => {
-              // document.body.style.overflow = "hidden";
+            //   document.body.style.overflow = "hidden";
               setOpen(!open);
             }}
           >
@@ -37,10 +37,11 @@ export default function Hero() {
           <img src="./navbarlogo.png" className="w-[180px] h-[40px]" />
         </div>
 
-        <div className="md:absolute mt-28 md:mt-0 md:bottom-20 w-[80vw] h-[30vh] md:w-[40vw] md:h-[50vh] rounded-lg bg-[#D9D9D9] bg-opacity-50 md:bg-opacity-10  md:left-20 px-4">
-          <p className="text-[32px] md:text-[60px] font-bold "> Contact Us</p>
+        <div className="absolute bottom-0 md:bottom-20 md:w-[60vw] md:left-20 px-4  py-14">
+          <p className="text-[32px] md:text-[60px] font-bold ">About Us</p>
           <p className="text-[24px]">
-            Digital 360 India <br /> 80-83 Long Lane <br /> London EC1A 9ET
+            Lorem ipsum dolor sit amet consectetur. Imperdiet arcu netus gravida
+            congue amet facilisi neque blandit. At nibh.
           </p>
         </div>
 
@@ -49,7 +50,7 @@ export default function Hero() {
             <div className="absolute top-0 left-0 w-full h-screen bg-[#13375D] z-50 p-10 ">
               <button
                 onClick={() => {
-                  // document.body.style.overflow = "auto";
+                //   document.body.style.overflow = "auto";
                   setOpen(!open);
                 }}
                 className="float-end "

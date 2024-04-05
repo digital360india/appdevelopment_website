@@ -5,14 +5,17 @@ import Aboutdetails from "../components/aboutdetails";
 import Aboutfooter from "../components/aboutfooter";
 import Aboutteam from "../components/aboutteam";
 
+import AboutHero from "../components/AboutHero";
+
 export default function AboutUs() {
   return (
     <>
+      <AboutHero />
       <div className=" w-full px-[24px] py-[40px] md:px-[60px] lg:px-[80px] xl:px-[100px] border border-black">
         <Abouthead />
         <Aboutdata />
         <Aboutdetails />
-        <Aboutteam/>
+        <Aboutteam />
         <Aboutfooter />
       </div>
     </>

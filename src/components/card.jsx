@@ -31,7 +31,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="md:p-20">
+    <div className="md:p-20" id="tech">
       <div className="text-black">
       <p className="md:text-6xl text-[32px] text-[#13375D] font-semibold ml-7 md:ml-8 pt-6 pb-4 md:py-8">TECH STACK</p>
       
