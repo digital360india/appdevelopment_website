@@ -14,7 +14,7 @@ export default function MainHero() {
 
   return (
     <div>
-      <div className="bg-[url('cover.jpg')] bg-center md:bg-cover font-poppins pb-2 md:h-[100vh] w-full text-white relative">
+      <div className="bg-center md:bg-cover font-poppins pb-2 md:h-[100vh] w-full text-white relative" style={{backgroundImage: `url('/cover.jpg')`}}>
         <div className="hidden md:flex px-20 py-10 justify-between items-center">
           <Link to={"/"}>
             <img src="./navbarlogo.png" className="w-[180px] h-[40px]" />
