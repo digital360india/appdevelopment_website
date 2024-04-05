@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-// import kwesforms from 'kwesforms';
-const kwesforms = require('kwesforms');
+import kwesforms from 'kwesforms';
+// const kwesforms = require('kwesforms');
 
 export default function Formdetails() {
   useEffect(()=>{
