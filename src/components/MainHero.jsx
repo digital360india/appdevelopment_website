@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import kwesforms from "kwesforms";
+// import kwesforms from "kwesforms";
 // const kwesforms = require('kwesforms');
 import CustomPopup from "./Popup";
 
