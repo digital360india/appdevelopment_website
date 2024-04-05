@@ -11,9 +11,9 @@ function CustomPopup({ isOpen, setOpen }) {
     return () => clearInterval(interval);
   }, [setOpen]);
 
-  useEffect(() => {
-    kwesforms;
-  }, []);
+  // useEffect(() => {
+  //   kwesforms;
+  // }, []);
   return (
     <Popup
       open={isOpen}

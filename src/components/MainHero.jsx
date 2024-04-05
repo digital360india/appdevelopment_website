@@ -8,9 +8,9 @@ export default function MainHero() {
   const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    kwesforms;
-  }, []);
+  // useEffect(() => {
+  //   kwesforms;
+  // }, []);
 
   return (
     <div>

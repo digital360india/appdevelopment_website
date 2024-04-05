@@ -3,9 +3,9 @@ import React, { useEffect } from "react";
 // const kwesforms = require('kwesforms');
 
 export default function Formdetails() {
-  useEffect(()=>{
-    kwesforms;
-  },[]);
+  // useEffect(()=>{
+  //   kwesforms;
+  // },[]);
   return (
     <div className="md:p-8  ">
     <form method="POST" action="https://kwesforms.com/api/f/62NBcSztB2iG3PVMlcsF" className="kf-form">
