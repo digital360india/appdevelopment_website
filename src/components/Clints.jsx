@@ -39,9 +39,6 @@ const Clints = () => {
     {
       img: "apple.png",
     },
-    {
-      img: "amazon.png",
-    },
   ];
   return (
     <div className="px-4 py-20 md:p-20 " id="clients">

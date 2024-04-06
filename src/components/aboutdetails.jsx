@@ -13,7 +13,7 @@ export default function Aboutdetails() {
       </div>
 
 {/* second col */}
-      <div className='secend  space-y-6 lg:w-[552px] lg:px-[60px] lg:h-[900px] lg:mt-0 md:h-[800px] md:w-[450px] md:ml-[80px] md:px-[40px] mt-8  rounded-lg bg-[#4B698D]  px-[24px]  pt-[60px] h-[720px] w-full '>
+      <div className='secend  space-y-6 lg:w-[552px] lg:px-[60px] lg:h-[950px] lg:mt-0 md:h-[800px] md:w-[450px] md:ml-[80px] md:px-[40px] mt-8  rounded-lg bg-[#4B698D]  px-[24px]  pt-[60px] h-[720px] w-full '>
        
         <div className='2st'>
           <p className='text-white bg-white h-1 w-[75px] '></p>
