@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <div>
-      <div className="bg-[url('./hero.jpeg')]  bg-center md:bg-cover font-poppins pb-2 h-[60vh] md:h-[100vh] w-full text-white relative">
+      <div className=" bg-center md:bg-cover font-poppins pb-2 h-[60vh] md:h-[100vh] w-full text-white relative" style={{backgroundImage: `url('/hero.jpeg')`}}>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
         <div className="hidden md:flex px-20 py-10 justify-between items-center relative">
           <Link to={"/"}>
