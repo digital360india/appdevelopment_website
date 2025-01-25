@@ -6,7 +6,7 @@ import CustomPopup from "./Popup";
 function Hero() {
 
 
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false); 
 
     // Define your function here if needed
 
