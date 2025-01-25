@@ -3,7 +3,7 @@ import Cards from './Cards';
 
 const Industries = () => {
     return (
-        <div className="base">
+        <div className="base" id='industry'>
             <div className='container-head  p-4 md:py-12  lg:flex flex-col space-y-6  md:flex-row justify-around bg-gray-100'>
                 <div className='w-full md:w-[410px]  md:mr-10 md:mt-3'>
                     <h1 className="text-[32px] md:text-6xl lg:mb-12 text-[#13375D] uppercase font-semibold lg:leading-[78px]">Industries We Serve</h1>

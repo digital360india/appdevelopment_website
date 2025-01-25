@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="h-[405px] bg-[#13375D]">
+    <div className="h-[63vh] md:h-[405px] bg-[#13375D]">
       <div className=" text-white bg-[url('/digismall.png')] bg-opacity-0 md:bg-[url('/digi.png')]  bg-no-repeat bg-center  ">
-        {/* <div className='w-full h-full flex items-center justify-center'><img src="digi.png" alt="" /> </div> */}
         <div className=" pt-[48px] px-[24px] md:flex md:justify-between md:px-[70px]    lg:flex lg:justify-between  lg:px-[100px]">
           <div className="space-y-5">
-            <p>logo</p>
+            <img src="./navbarlogo.png"  className="w-[140px] h-10"/>
             <p className="text-[14px] md:mr-6 md:w-[28vw] lg:mr-8  lg:w-[30vw] ">
               We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -58,12 +57,19 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between text-[14px] md:text-[16px] md:w-[340px] lg:text-[16px] lg:w-[380px] py-4 ">
+          <div className="flex justify-between text-[14px] md:text-[16px] md:w-[340px] lg:text-[16px] lg:w-[380px] pt-4 ">
             <div className="space-y-5">
               <p>SITE MAP</p>
-              <p> <Link to={"/"}>Home</Link></p>
-              <p><Link to={"/about"}>About Us</Link></p>
-              <p><Link to={"/Contact"}>Contact</Link></p>
+              <p>
+                {" "}
+                <Link to={"/"}>Home</Link>
+              </p>
+              <p>
+                <Link to={"/about"}>About Us</Link>
+              </p>
+              <p>
+                <Link to={"/Contact"}>Contact</Link>
+              </p>
             </div>
             <div className="space-y-5">
               <p>FOLLOW US</p>

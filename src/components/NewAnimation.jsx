@@ -46,9 +46,9 @@ export default function NewAnimation() {
  
   return (
     <>
-      <div className="w-full h-full font-poppins md:h-screen bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-slate-300 via-white to-slate-300 p-8  md:p-15 lg:p-20">
+      <div id="crossplatform" className="w-full h-full font-poppins md:h-screen bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-slate-300 via-white to-slate-300 p-8  md:p-15 lg:p-20">
         <div className=" h-full w-full md:py-3">
-          <div className="   text-3xl lg:text-6xl  text-[#13375D] md:h-[20%] mb-5   font-semibold">
+          <div className="   text-3xl lg:text-6xl  text-[#13375D] md:h-[20%] mb-5   font-semibold" >
             Cross Platform
           </div>
           <div className=" hidden md:flex gap-32 h-[80%] ">

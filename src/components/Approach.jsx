@@ -19,7 +19,7 @@ const Approach = () => {
 
   return (
     <div>
-      <div className='hidden lg:flex'>
+      <div className='hidden lg:flex' id='approach'>
         <div className="  w-full py-10 px-14 " style={{ backgroundImage: 'linear-gradient(179.82deg, #13375D 20.92%, rgba(19, 55, 93, 0.89) 65.25%, rgba(19, 55, 93, 0.85) 97.43%, #FFFFFF 124.21%)' }}>
           <h1 className='px-5 text-white font-semibold text-4xl md:w-[334px] md:h-[156px] md:text-6xl md:leading-[78px]'>OUR APPROACH</h1>
           <div className='px-4'>

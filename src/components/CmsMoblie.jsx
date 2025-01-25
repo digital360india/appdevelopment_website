@@ -31,15 +31,15 @@ const CmsMobile = () => {
                 </div>
             </div>
 
-            <div className='order-3 md:order-none'>
-                <button className="text-white rounded-md w-full h-[50px]"
+            {/* <div className='order-3 md:order-none'>
+                <button className="hidden text-white rounded-md w-full h-[50px]"
                     style={{
                         background: 'linear-gradient(to right, #13375D,  #ADBAC8)'
                     }}
                 >
                     Enquire now
                 </button>
-            </div>
+            </div> */}
 
         </div>
     )
